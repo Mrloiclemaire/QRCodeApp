@@ -1,0 +1,19 @@
+.codes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.QRcode {
+    margin: 10px;
+    border : solid 0px black;
+    padding: 10px;
+    border-radius: 12px;
+    background: #7F11DB;
+    background: #0FDA84;
+    background: -webkit-linear-gradient(top left, rgb(233, 80, 20), #F1F50D);
+    background: -moz-linear-gradient(top left, rgb(233, 80, 20), #F1F50D );
+    background: linear-gradient(to bottom right, rgb(233, 80, 20), #F1F50D );
+}
+

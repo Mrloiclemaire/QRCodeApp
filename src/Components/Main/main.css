@@ -1,0 +1,44 @@
+
+.background {
+   
+        background-image: url(../../assets/sushi2.jpg);
+        height:100vh;
+        background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+     
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mainLink {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border: solid 0px black;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-radius:12px;
+}
+
+.mainLink {background-image: linear-gradient(to right, rgb(233, 80, 20) 0%, #EDDE5D  51%, rgb(233, 80, 20)  100%)}
+.mainLink {
+   margin-top: 85px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   display: block;
+ }
+
+ .mainLink:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+ }
