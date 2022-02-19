@@ -1,26 +1,31 @@
-import react, { Fragment, useState } from 'react'
+import { useState } from 'react'
+
 import Header from './components/Layout/Header'
 import Meals from './components/Meals/Meals'
 import Cart from './components/Cart/Cart'
+import CartProvider from './store/CartProvider'
+import Footer from './components/Layout/Footer'
 
 function App() {
-	const [modal, setIsModal] = useState(false)
+	const [cartIsShown, setCartIsShown] = useState(false)
 
-	const handleModalShow = () => {
-		setIsModal(true)
+	const showCartHandler = () => {
+		setCartIsShown(true)
 	}
-	const hideModalShow = () => {
-		setIsModal(false)
+
+	const hideCartHandler = () => {
+		setCartIsShown(false)
 	}
 
 	return (
-		<Fragment>
-			{modal && <Cart onClose={hideModalShow} />}
-			<Header onShow={handleModalShow} />
-			<main style={{ backgroundColor: '#e95014' }}>
+		<CartProvider>
+			{cartIsShown && <Cart onClose={hideCartHandler} />}
+			<Header onShowCart={showCartHandler} />
+			<main style={{ backgroundColor: 'rgb(233, 80, 20)' }}>
 				<Meals />
 			</main>
-		</Fragment>
+			<Footer />
+		</CartProvider>
 	)
 }
 
