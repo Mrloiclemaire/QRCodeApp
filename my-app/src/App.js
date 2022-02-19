@@ -6,7 +6,7 @@ function App() {
 	return (
 		<Fragment>
 			<Header />
-			<main>
+			<main style={{ backgroundColor: '#e95014' }}>
 				<Meals />
 			</main>
 		</Fragment>
