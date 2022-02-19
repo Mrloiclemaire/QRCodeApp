@@ -1,0 +1,17 @@
+form {
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+   
+}
+
+label {
+    color:white;
+    font-size: 18px;
+}
+
+input {
+    border-radius: 10px;
+    margin-left: 10px;
+}
